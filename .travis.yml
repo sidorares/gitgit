@@ -9,7 +9,7 @@ after_success:
     echo "machine github.com login sidorares password $GITHUB_TOKEN" > ~/.netrc
     cd build
     cat ~/.netrc
-
+    ls -al ~
 
     npm install
     ./setup.sh
