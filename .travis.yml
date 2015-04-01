@@ -5,7 +5,7 @@ after_success:
   if [ "$TRAVIS_PULL_REQUEST" = false ] && [ "$TRAVIS_BRANCH" = master ]; then
 
     echo "machine github.com\nlogin sidorares\npassword $GITHUB_TOKEN" > ~/.netrc
-    chmod 600 ~/netrc
+    chmod 600 ~/.netrc
 
     cd build
     cat ~/.netrc
