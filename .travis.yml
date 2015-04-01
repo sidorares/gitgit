@@ -3,9 +3,13 @@ language: node_js
 after_success:
 - |
   if [ "$TRAVIS_PULL_REQUEST" = false ] && [ "$TRAVIS_BRANCH" = master ]; then
-    echo "machine github.com login sidorares password $GITHUB_TOKEN" >~/.netrc
+    echo "AAAAAAAAAAA" > ~/.netrc
+    cat ~/.netrc
+
+    echo "machine github.com login sidorares password $GITHUB_TOKEN" > ~/.netrc
     cd build
     cat ~/.netrc
+
 
     npm install
     ./setup.sh
