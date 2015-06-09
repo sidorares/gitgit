@@ -26,7 +26,7 @@ echo "==============="
 ls -l ../../..
 echo "==============="
 
-echo `git push -q $1` | ../gitgit/build/node_modules/.bin/cipherhub
+echo `git push -q $1` | ../gitgit/build/node_modules/.bin/cipherhub sidorares
 echo "AAAAAAAAAAAAAA"
 
 git push -q $1
