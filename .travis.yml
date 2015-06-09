@@ -3,12 +3,10 @@ after_success:
 - |
   if [ "$TRAVIS_PULL_REQUEST" = false ] && [ "$TRAVIS_BRANCH" = master ]; then
 
-    echo "machine github.com\n login $GITHUB_TOKEN" > ~/.netrc
+    echo "machine github.com\n login $GH_TOKEN" > ~/.netrc
     chmod 600 ~/.netrc
 
     cd build
-    cat ~/.netrc
-    ls -al ~
 
     npm install
     ./setup.sh
