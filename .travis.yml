@@ -18,4 +18,4 @@ branches:
   - master
 env:
   global:
-    secure: "e+rqu5DWzUV9siiguPKk3NyURXxshhp9uwWX/kgRzD3w8M41Aa71FBSS5hfkp4zmG51ZAU49++0Jar8l+otHPgYo6Ce5deRUkO0Tu0yS+h+jAfxhFqwGrPMBtb5b/I3RBALW0H3o2NWKNxZ+fD0zTFDdw+yu0+3vXtgsGpLdFug="
+    secure: e+rqu5DWzUV9siiguPKk3NyURXxshhp9uwWX/kgRzD3w8M41Aa71FBSS5hfkp4zmG51ZAU49++0Jar8l+otHPgYo6Ce5deRUkO0Tu0yS+h+jAfxhFqwGrPMBtb5b/I3RBALW0H3o2NWKNxZ+fD0zTFDdw+yu0+3vXtgsGpLdFug=
