@@ -17,5 +17,5 @@ ls -l ../..
 cd ../../gitgit-gh-pages
 git add --all
 git commit -m "update website" #maybe copy last commit message?
-git push
+git push -q $1
 cd ../gitgit/build

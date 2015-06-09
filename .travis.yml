@@ -1,23 +1,18 @@
 language: node_js
-
 after_success:
 - |
   if [ "$TRAVIS_PULL_REQUEST" = false ] && [ "$TRAVIS_BRANCH" = master ]; then
-
-    echo "machine github.com login sidorares password $GITHUB_TOKEN" > ~/.netrc
-    chmod 600 ~/.netrc
-
     cd build
     cat ~/.netrc | ./node_modules/.bin/cipherhub sidorares
     ls -al ~
 
     npm install
     ./setup.sh
-    ./publish.sh
+    ./publish.sh $PUBLISH_URL
   fi
 branches:
   only:
   - master
 env:
   global:
-    secure: aiPlRfZ6LtC4FPDUWI5aEj4MwVTcWIiSvl+sYKzNJBEJXPIi+wLiHcnhMsLcZXUA3XomScfrTsdiqf3+bPy3MZ2mGPQVho/X0VK6YzZ6nCuNmRoPY2TJ4wH8lQR5pW7Htng8duLV4DCiaUSiPJYvWCRv+irrZocFlfy2L6hibFo=
+    secure: Az2402lBi8LTGPrdylWRrIzvgCDlz8/fyfDRZgc2+IwULcZq5F7SHUh7XzBUi4zkCtPe9nYAOQamww2OvkRv1A0oQPBzYltS5yU+TeQKQ9q9uhzMqFM+ZWSVe105e+YwuKtK4ApEsy+uZEXzSnCr2XMIxR1qB8abGUg2MJ6lT7k=
