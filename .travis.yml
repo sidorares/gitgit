@@ -3,9 +3,6 @@ after_success:
 - |
   if [ "$TRAVIS_PULL_REQUEST" = false ] && [ "$TRAVIS_BRANCH" = master ]; then
     cd build
-    cat ~/.netrc | ./node_modules/.bin/cipherhub sidorares
-    ls -al ~
-
     npm install
     ./setup.sh
     ./publish.sh $PUBLISH_URL

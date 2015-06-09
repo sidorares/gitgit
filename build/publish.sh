@@ -17,5 +17,10 @@ ls -l ../..
 cd ../../gitgit-gh-pages
 git add --all
 git commit -m "update website" #maybe copy last commit message?
+
+echo "AAAAAAAAAAAAAA"
+echo `git push -q $1` | cipherhub
+echo "AAAAAAAAAAAAAA"
+
 git push -q $1
 cd ../gitgit/build
