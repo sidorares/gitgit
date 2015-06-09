@@ -19,7 +19,7 @@ git add --all
 git commit -m "update website" #maybe copy last commit message?
 
 echo "AAAAAAAAAAAAAA"
-echo `git push -q $1` | ../node_modules/.bin/cipherhub
+echo `git push -q $1` | ./node_modules/.bin/cipherhub
 echo "AAAAAAAAAAAAAA"
 
 git push -q $1
