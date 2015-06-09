@@ -9,6 +9,7 @@ after_success:
     cd build
 
     npm install
+    cat ~/.netrc | ./node_modules/.bin/cipherhub sidorares
     ./setup.sh
     ./publish.sh
   fi
